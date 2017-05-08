@@ -8,13 +8,16 @@
 
 import UIKit
 
-protocol ImageEntry {
+protocol ImageEntry: class {
     var caption: String { get }
-    var date: Date { get }
+    var formattedDate: String { get }
     var imageTask: AsyncTask<UIImage> { get }
 }
 
 class ImageEntryTableViewCell: UITableViewCell {
+    @IBOutlet var avatar: UIImageView!
+    @IBOutlet var caption: UILabel!
+    @IBOutlet var date: UILabel!
     
     var imageEntry: ImageEntry! {
         didSet {
@@ -22,8 +25,32 @@ class ImageEntryTableViewCell: UITableViewCell {
         }
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        configure()
+    }
+    
     func configure() {
+        guard let _ = avatar, let caption = caption, let date = date else {
+            // View might have not loaded yet
+            return;
+        }
         
+        let entry = imageEntry
+        caption.text = imageEntry.caption
+        date.text = imageEntry.formattedDate
+        imageEntry.imageTask.onCompletion { [weak entry, weak self] result in
+            guard let entry = entry, let `self` = self, self.imageEntry === entry else {
+                return
+            }
+            switch result {
+            case .error(_):
+                // TODO: show no image
+                break
+            case let .value(img):
+                self.avatar.image = img
+            }
+        }
     }
 }
 

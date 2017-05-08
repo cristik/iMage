@@ -18,6 +18,8 @@
 		0F626E081EC0F84100D4DF15 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E071EC0F84100D4DF15 /* ImageStore.swift */; };
 		0F626E0E1EC0FD3200D4DF15 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */; };
 		0F626E101EC0FEA000D4DF15 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E0F1EC0FEA000D4DF15 /* Image.swift */; };
+		3372F5D81EC1085000591A75 /* ImageEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */; };
+		3372F5DE1EC10D8700591A75 /* ImageEntryCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */; };
 		3B9A2BBFCC9DE8699365DA4D /* Pods_iMage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */; };
 		81BD0BA151B1AFF278807184 /* Pods_iMageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
 		0F626E0F1EC0FEA000D4DF15 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.release.xcconfig"; sourceTree = "<group>"; };
+		3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageEntryTableViewCell.xib; sourceTree = "<group>"; };
+		3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryCellTests.swift; sourceTree = "<group>"; };
 		B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A4EEEA4031ED8DEC16E887 /* Pods-iMageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMageTests/Pods-iMageTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				0F626E061EC0F82A00D4DF15 /* Core */,
 				0F626DE01EC0E85F00D4DF15 /* AppDelegate.swift */,
 				0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */,
+				3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */,
 				0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */,
 				0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */,
 				0F626E041EC0F74F00D4DF15 /* AsyncTask.swift */,
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */,
+				3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */,
 				0F626DF71EC0E85F00D4DF15 /* Info.plist */,
 			);
 			path = iMageTests;
@@ -246,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F626DEB1EC0E85F00D4DF15 /* LaunchScreen.storyboard in Resources */,
+				3372F5D81EC1085000591A75 /* ImageEntryTableViewCell.xib in Resources */,
 				0F626DE81EC0E85F00D4DF15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3372F5DE1EC10D8700591A75 /* ImageEntryCellTests.swift in Sources */,
 				0F626DF61EC0E85F00D4DF15 /* iMageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
