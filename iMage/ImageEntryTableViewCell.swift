@@ -31,16 +31,15 @@ class ImageEntryTableViewCell: UITableViewCell {
     }
     
     func configure() {
-        guard let _ = avatar, let caption = caption, let date = date else {
-            // View might have not loaded yet
-            return;
+        
+        guard let imageEntry = imageEntry else {
+            return
         }
         
-        let entry = imageEntry
         caption.text = imageEntry.caption
         date.text = imageEntry.formattedDate
-        imageEntry.imageTask.onCompletion { [weak entry, weak self] result in
-            guard let entry = entry, let `self` = self, self.imageEntry === entry else {
+        imageEntry.imageTask.onCompletion { [weak imageEntry, weak self] result in
+            guard let imageEntry = imageEntry, let `self` = self, self.imageEntry === imageEntry else {
                 return
             }
             switch result {
@@ -48,7 +47,7 @@ class ImageEntryTableViewCell: UITableViewCell {
                 // TODO: show no image
                 break
             case let .value(img):
-                self.avatar.image = img
+                DispatchQueue.main.async { self.avatar.image = img }
             }
         }
     }

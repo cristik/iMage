@@ -15,11 +15,15 @@ class FeedViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 370
         tableView.register(cellType: ImageEntryTableViewCell.self)
         
-        imageClient.fetchHotImages().onSuccess {
-            self.imageStore.reset(with: $0)
-            self.tableView.reloadData()
+        imageClient.fetchHotImages().onSuccess { images in
+            DispatchQueue.main.async {
+                self.imageStore.reset(with: images)
+                self.tableView.reloadData()
+            }
         }.onFailure {
             print("Got error: \($0)")
         }

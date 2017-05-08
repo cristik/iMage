@@ -51,6 +51,7 @@
 		0F626E091EC0F85A00D4DF15 /* iMage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMage-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
 		0F626E0F1EC0FEA000D4DF15 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		0FA9236F1EC1119800C92481 /* iMageTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iMageTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.release.xcconfig"; sourceTree = "<group>"; };
 		3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageEntryTableViewCell.xib; sourceTree = "<group>"; };
 		3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryCellTests.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 				0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */,
 				3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */,
 				0F626DF71EC0E85F00D4DF15 /* Info.plist */,
+				0FA9236F1EC1119800C92481 /* iMageTests-Bridging-Header.h */,
 			);
 			path = iMageTests;
 			sourceTree = "<group>";
@@ -222,6 +224,7 @@
 					0F626DF01EC0E85F00D4DF15 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = F256K9XGKC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0F626DDC1EC0E85F00D4DF15;
 					};
@@ -538,11 +541,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F256K9XGKC;
 				INFOPLIST_FILE = iMageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristik.iMageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMageTests/iMageTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMage.app/iMage";
 			};
@@ -554,11 +560,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F256K9XGKC;
 				INFOPLIST_FILE = iMageTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cristik.iMageTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iMageTests/iMageTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMage.app/iMage";
 			};
