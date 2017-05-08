@@ -14,6 +14,8 @@
 		0F626DF61EC0E85F00D4DF15 /* iMageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */; };
 		0F626E011EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */; };
 		0F626E031EC0EDDE00D4DF15 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E021EC0EDDE00D4DF15 /* Utils.swift */; };
+		0F626E051EC0F74F00D4DF15 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E041EC0F74F00D4DF15 /* AsyncTask.swift */; };
+		3B9A2BBFCC9DE8699365DA4D /* Pods_iMage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		0F626DF71EC0E85F00D4DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryTableViewCell.swift; sourceTree = "<group>"; };
 		0F626E021EC0EDDE00D4DF15 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0F626E041EC0F74F00D4DF15 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
+		1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.release.xcconfig"; sourceTree = "<group>"; };
+		B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40632837E63ADC1486F548F /* Pods-iMage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9A2BBFCC9DE8699365DA4D /* Pods_iMage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +71,8 @@
 				0F626DDF1EC0E85F00D4DF15 /* iMage */,
 				0F626DF41EC0E85F00D4DF15 /* iMageTests */,
 				0F626DDE1EC0E85F00D4DF15 /* Products */,
+				70D59591618EC9319719EEAC /* Pods */,
+				2AAB283EDB17B2B3E6F491B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +91,7 @@
 				0F626DE01EC0E85F00D4DF15 /* AppDelegate.swift */,
 				0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */,
 				0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */,
+				0F626E041EC0F74F00D4DF15 /* AsyncTask.swift */,
 				0F626E021EC0EDDE00D4DF15 /* Utils.swift */,
 				0F626DE71EC0E85F00D4DF15 /* Assets.xcassets */,
 				0F626DE91EC0E85F00D4DF15 /* LaunchScreen.storyboard */,
@@ -99,6 +109,23 @@
 			path = iMageTests;
 			sourceTree = "<group>";
 		};
+		2AAB283EDB17B2B3E6F491B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D59591618EC9319719EEAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40632837E63ADC1486F548F /* Pods-iMage.debug.xcconfig */,
+				1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F626DFA1EC0E85F00D4DF15 /* Build configuration list for PBXNativeTarget "iMage" */;
 			buildPhases = (
+				129C3EDFA215D05BFDA07F27 /* [CP] Check Pods Manifest.lock */,
 				0F626DD91EC0E85F00D4DF15 /* Sources */,
 				0F626DDA1EC0E85F00D4DF15 /* Frameworks */,
 				0F626DDB1EC0E85F00D4DF15 /* Resources */,
+				1422AA202337AF8F09BB72C0 /* [CP] Embed Pods Frameworks */,
+				2A283061D668347E9B65BB46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +228,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		129C3EDFA215D05BFDA07F27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1422AA202337AF8F09BB72C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMage/Pods-iMage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A283061D668347E9B65BB46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMage/Pods-iMage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0F626DD91EC0E85F00D4DF15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -205,6 +283,7 @@
 			files = (
 				0F626E011EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift in Sources */,
 				0F626DE31EC0E85F00D4DF15 /* FeedViewController.swift in Sources */,
+				0F626E051EC0F74F00D4DF15 /* AsyncTask.swift in Sources */,
 				0F626DE11EC0E85F00D4DF15 /* AppDelegate.swift in Sources */,
 				0F626E031EC0EDDE00D4DF15 /* Utils.swift in Sources */,
 			);
@@ -335,6 +414,7 @@
 		};
 		0F626DFB1EC0E85F00D4DF15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40632837E63ADC1486F548F /* Pods-iMage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F256K9XGKC;
@@ -348,6 +428,7 @@
 		};
 		0F626DFC1EC0E85F00D4DF15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F256K9XGKC;
@@ -408,6 +489,7 @@
 				0F626DFC1EC0E85F00D4DF15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F626DFD1EC0E85F00D4DF15 /* Build configuration list for PBXNativeTarget "iMageTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +498,7 @@
 				0F626DFF1EC0E85F00D4DF15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

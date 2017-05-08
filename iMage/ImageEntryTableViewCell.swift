@@ -11,7 +11,7 @@ import UIKit
 protocol ImageEntry {
     var caption: String { get }
     var date: Date { get }
-    var url: URL { get }
+    var imageTask: AsyncTask<UIImage> { get }
 }
 
 class ImageEntryTableViewCell: UITableViewCell {
