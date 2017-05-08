@@ -22,4 +22,8 @@ extension UITableView {
             register(cellType, forCellReuseIdentifier: cellType.reuseIdentifier)
         }
     }
+    
+    func dequeue<T: TableViewCell>() -> T {
+        return dequeueReusableCell(withIdentifier: T.reuseIdentifier) as! T
+    }
 }

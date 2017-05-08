@@ -33,7 +33,8 @@ class AsyncTask<T> {
     private var successCallbacks = [(T) -> Void]()
     private var failureCallbacks = [(Error) -> Void]()
     
-    public func onSuccess(_ callback: @escaping (T) -> Void) {
+    @discardableResult
+    public func onSuccess(_ callback: @escaping (T) -> Void) -> AsyncTask<T> {
         mutex.locked {
             switch state {
             case .pending: successCallbacks.append(callback)
@@ -41,9 +42,11 @@ class AsyncTask<T> {
             case .failure: break
             }
         }
+        return self
     }
     
-    public func onFailure(_ callback: @escaping (Error) -> Void) {
+    @discardableResult
+    public func onFailure(_ callback: @escaping (Error) -> Void) -> AsyncTask<T> {
         mutex.locked {
             switch state {
             case .pending: failureCallbacks.append(callback)
@@ -51,9 +54,11 @@ class AsyncTask<T> {
             case let .failure(error): callback(error)
             }
         }
+        return self
     }
     
-    public func onCompletion(_ callback: @escaping (Result<T>) -> Void) {
+    @discardableResult
+    public func onCompletion(_ callback: @escaping (Result<T>) -> Void) -> AsyncTask<T>  {
         mutex.locked {
             switch state {
             case .pending:
@@ -63,6 +68,7 @@ class AsyncTask<T> {
             case let .failure(error): callback(.error(error))
             }
         }
+        return self
     }
     
     public func reportSuccess(with value: T) {

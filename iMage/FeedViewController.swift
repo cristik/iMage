@@ -10,19 +10,28 @@ import UIKit
 import ImgurSession
 
 class FeedViewController: UITableViewController {
+    let imageClient = ImageClient()
+    var imageStore = ImageStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(cellType: ImageEntryTableViewCell.self)
         
-        IMGSession.anonymousSession(withClientID: "c591cd0888615a3", with: self)
-        IMGGalleryRequest.hotGalleryPage(0, success: {
-            print("Results: \($0)")
-        }) { print("Error: \($0)")
+        imageClient.fetchHotImages().onSuccess {
+            self.imageStore.reset(with: $0)
+            self.tableView.reloadData()
+        }.onFailure {
+            print("Got error: \($0)")
         }
     }
-}
-
-extension FeedViewController: IMGSessionDelegate {
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return imageStore.images.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: ImageEntryTableViewCell = tableView.dequeue()
+        cell.imageEntry = imageStore.images[indexPath.row]
+        return cell
+    }
 }
