@@ -18,34 +18,65 @@ enum Result<T> {
 }
 
 class AsyncTask<T> {
-    private(set) var state = AsyncTaskState<T>.pending
+    private(set) var state = AsyncTaskState<T>.pending {
+        didSet {
+            switch state {
+            case let .success(value): successCallbacks.forEach { $0(value) }
+            case let .failure(error): failureCallbacks.forEach { $0(error) }
+            case .pending: break
+            }
+            successCallbacks.removeAll()
+            failureCallbacks.removeAll()
+        }
+    }
+    private let mutex = Mutex()
     private var successCallbacks = [(T) -> Void]()
     private var failureCallbacks = [(Error) -> Void]()
-    private var completionCallbacks = [(Result<T>) -> Void]()
     
     public func onSuccess(_ callback: @escaping (T) -> Void) {
-        switch state {
-        case .pending: successCallbacks.append(callback)
-        case let .success(value): callback(value)
-        case .failure: break
+        mutex.locked {
+            switch state {
+            case .pending: successCallbacks.append(callback)
+            case let .success(value): callback(value)
+            case .failure: break
+            }
         }
     }
     
     public func onFailure(_ callback: @escaping (Error) -> Void) {
-        switch state {
-        case .pending: failureCallbacks.append(callback)
-        case .success: break
-        case let .failure(error): callback(error)
+        mutex.locked {
+            switch state {
+            case .pending: failureCallbacks.append(callback)
+            case .success: break
+            case let .failure(error): callback(error)
+            }
         }
     }
     
     public func onCompletion(_ callback: @escaping (Result<T>) -> Void) {
-        switch state {
-        case .pending:
-            successCallbacks.append( { callback(.value($0)) })
-            failureCallbacks.append( { callback(.error($0)) })
-        case let .success(value): callback(.value(value))
-        case let .failure(error): callback(.error(error))
+        mutex.locked {
+            switch state {
+            case .pending:
+                successCallbacks.append( { callback(.value($0)) })
+                failureCallbacks.append( { callback(.error($0)) })
+            case let .success(value): callback(.value(value))
+            case let .failure(error): callback(.error(error))
+            }
+        }
+    }
+    
+    public func reportSuccess(with value: T) {
+        mutex.locked {
+            guard case .pending = state else { return }
+            state = .success(value)
+        }
+        
+    }
+    
+    public func reportFailure(with error: Error) {
+        mutex.locked {
+            guard case .pending = state else { return }
+            state = .failure(error)
         }
     }
 }
