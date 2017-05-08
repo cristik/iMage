@@ -19,6 +19,7 @@
 		0F626E0E1EC0FD3200D4DF15 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */; };
 		0F626E101EC0FEA000D4DF15 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E0F1EC0FEA000D4DF15 /* Image.swift */; };
 		3B9A2BBFCC9DE8699365DA4D /* Pods_iMage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */; };
+		81BD0BA151B1AFF278807184 /* Pods_iMageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,10 @@
 		0F626E0D1EC0FD3200D4DF15 /* Mutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
 		0F626E0F1EC0FEA000D4DF15 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.release.xcconfig"; sourceTree = "<group>"; };
+		B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A4EEEA4031ED8DEC16E887 /* Pods-iMageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMageTests/Pods-iMageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F047F8044CF101311DBCD33B /* Pods-iMageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMageTests/Pods-iMageTests.release.xcconfig"; sourceTree = "<group>"; };
 		F40632837E63ADC1486F548F /* Pods-iMage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81BD0BA151B1AFF278807184 /* Pods_iMageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */,
+				B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 			children = (
 				F40632837E63ADC1486F548F /* Pods-iMage.debug.xcconfig */,
 				1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */,
+				C9A4EEEA4031ED8DEC16E887 /* Pods-iMageTests.debug.xcconfig */,
+				F047F8044CF101311DBCD33B /* Pods-iMageTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F626DFD1EC0E85F00D4DF15 /* Build configuration list for PBXNativeTarget "iMageTests" */;
 			buildPhases = (
+				787E1FB5F222593D41D1EF9A /* [CP] Check Pods Manifest.lock */,
 				0F626DED1EC0E85F00D4DF15 /* Sources */,
 				0F626DEE1EC0E85F00D4DF15 /* Frameworks */,
 				0F626DEF1EC0E85F00D4DF15 /* Resources */,
+				373238124F5DB6F3D71BC1EB /* [CP] Embed Pods Frameworks */,
+				64CEA7E919F8665EFF45E5A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +303,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMage/Pods-iMage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		373238124F5DB6F3D71BC1EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMageTests/Pods-iMageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CEA7E919F8665EFF45E5A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMageTests/Pods-iMageTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		787E1FB5F222593D41D1EF9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -470,6 +526,7 @@
 		};
 		0F626DFE1EC0E85F00D4DF15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A4EEEA4031ED8DEC16E887 /* Pods-iMageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +542,7 @@
 		};
 		0F626DFF1EC0E85F00D4DF15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F047F8044CF101311DBCD33B /* Pods-iMageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

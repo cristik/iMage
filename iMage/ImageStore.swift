@@ -9,7 +9,10 @@
 import Foundation
 import ImgurSession
 
-struct ImageStore {
+struct ImgurStore {
     var images: [Image] = []
 }
 
+class ImageClient {
+    //init(clientId: String)
+}
