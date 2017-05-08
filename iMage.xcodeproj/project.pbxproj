@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0F626DE11EC0E85F00D4DF15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DE01EC0E85F00D4DF15 /* AppDelegate.swift */; };
-		0F626DE31EC0E85F00D4DF15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DE21EC0E85F00D4DF15 /* ViewController.swift */; };
-		0F626DE61EC0E85F00D4DF15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F626DE41EC0E85F00D4DF15 /* Main.storyboard */; };
+		0F626DE31EC0E85F00D4DF15 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */; };
 		0F626DE81EC0E85F00D4DF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F626DE71EC0E85F00D4DF15 /* Assets.xcassets */; };
 		0F626DEB1EC0E85F00D4DF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F626DE91EC0E85F00D4DF15 /* LaunchScreen.storyboard */; };
 		0F626DF61EC0E85F00D4DF15 /* iMageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */; };
+		0F626E011EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */; };
+		0F626E031EC0EDDE00D4DF15 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E021EC0EDDE00D4DF15 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,15 @@
 /* Begin PBXFileReference section */
 		0F626DDD1EC0E85F00D4DF15 /* iMage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F626DE01EC0E85F00D4DF15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F626DE21EC0E85F00D4DF15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F626DE51EC0E85F00D4DF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0F626DE71EC0E85F00D4DF15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F626DEA1EC0E85F00D4DF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F626DEC1EC0E85F00D4DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F626DF11EC0E85F00D4DF15 /* iMageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMageTests.swift; sourceTree = "<group>"; };
 		0F626DF71EC0E85F00D4DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryTableViewCell.swift; sourceTree = "<group>"; };
+		0F626E021EC0EDDE00D4DF15 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				0F626DE01EC0E85F00D4DF15 /* AppDelegate.swift */,
-				0F626DE21EC0E85F00D4DF15 /* ViewController.swift */,
-				0F626DE41EC0E85F00D4DF15 /* Main.storyboard */,
+				0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */,
+				0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */,
+				0F626E021EC0EDDE00D4DF15 /* Utils.swift */,
 				0F626DE71EC0E85F00D4DF15 /* Assets.xcassets */,
 				0F626DE91EC0E85F00D4DF15 /* LaunchScreen.storyboard */,
 				0F626DEC1EC0E85F00D4DF15 /* Info.plist */,
@@ -183,7 +186,6 @@
 			files = (
 				0F626DEB1EC0E85F00D4DF15 /* LaunchScreen.storyboard in Resources */,
 				0F626DE81EC0E85F00D4DF15 /* Assets.xcassets in Resources */,
-				0F626DE61EC0E85F00D4DF15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F626DE31EC0E85F00D4DF15 /* ViewController.swift in Sources */,
+				0F626E011EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift in Sources */,
+				0F626DE31EC0E85F00D4DF15 /* FeedViewController.swift in Sources */,
 				0F626DE11EC0E85F00D4DF15 /* AppDelegate.swift in Sources */,
+				0F626E031EC0EDDE00D4DF15 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +229,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0F626DE41EC0E85F00D4DF15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F626DE51EC0E85F00D4DF15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F626DE91EC0E85F00D4DF15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
