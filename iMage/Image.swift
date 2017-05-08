@@ -37,3 +37,4 @@ class Image: ImageEntry {
         self.imgImage = imgImage
     }
 }
+
