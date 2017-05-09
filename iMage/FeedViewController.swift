@@ -10,19 +10,24 @@ import UIKit
 import ImgurSession
 
 class FeedViewController: UITableViewController {
-    let imageClient = ImageClient()
-    var imageStore = ImageStore()
+    let imgurClient = ImgurClient()
+    var imageStore = ImageStore() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "iMage"
+
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 370
         tableView.register(cellType: ImageEntryTableViewCell.self)
         
-        imageClient.fetchHotImages().onSuccess { images in
+        imgurClient.fetchHotImages().onSuccess { images in
             DispatchQueue.main.async {
-                self.imageStore.reset(with: images)
-                self.tableView.reloadData()
+                self.imageStore = self.imageStore.reseted(with: images)
             }
         }.onFailure {
             print("Got error: \($0)")
@@ -37,5 +42,15 @@ class FeedViewController: UITableViewController {
         let cell: ImageEntryTableViewCell = tableView.dequeue()
         cell.imageEntry = imageStore.images[indexPath.row]
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel(frame: .zero)
+        label.text = "\(imageStore.images.count) images"
+        return label
+    }
+
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
     }
 }

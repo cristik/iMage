@@ -6,4 +6,5 @@ end
 target 'iMageTests' do
   use_frameworks!
   pod 'FBSnapshotTestCase'
+  pod 'Mockingjay'
 end

@@ -27,16 +27,27 @@ PODS:
     - FBSnapshotTestCase/Core
   - ImgurSession (1.3):
     - AFNetworking (= 2.6.3)
+  - Mockingjay (2.0.0):
+    - Mockingjay/Core (= 2.0.0)
+    - Mockingjay/XCTest (= 2.0.0)
+  - Mockingjay/Core (2.0.0):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.0):
+    - Mockingjay/Core
+  - URITemplate (2.0.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - ImgurSession
+  - Mockingjay
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  FBSnapshotTestCase: '094f9f314decbabe373b87cc339bea235a63e07a'
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   ImgurSession: 76e5ef98cb0224866f571acd39f6170bdcc66c2b
+  Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
+  URITemplate: 720b8a56a281494d7c2d31ee33183986eaed2c67
 
-PODFILE CHECKSUM: 8b655cdce2884b97fac03f3768a45663255a3c65
+PODFILE CHECKSUM: 9ceb578a1a9179afd2f28f3e0701c4ee2bc4b090
 
-COCOAPODS: 1.2.0.beta.3
+COCOAPODS: 1.1.1
