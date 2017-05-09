@@ -20,6 +20,7 @@
 		3372F5D81EC1085000591A75 /* ImageEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */; };
 		3372F5DE1EC10D8700591A75 /* ImageEntryCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */; };
 		3B9A2BBFCC9DE8699365DA4D /* Pods_iMage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B813BF191B8A9AA7CDD25256 /* Pods_iMage.framework */; };
+		62BE29851EC1EDC900760C2B /* FBSnapshotTestCase-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BE29841EC1EDC900760C2B /* FBSnapshotTestCase-Additions.swift */; };
 		81BD0BA151B1AFF278807184 /* Pods_iMageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */; };
 		B622FCDB1EC1BAE4004FDD59 /* first_page.json in Resources */ = {isa = PBXBuildFile; fileRef = B622FCDA1EC1BAE4004FDD59 /* first_page.json */; };
 		B67C33691EC190C50087240A /* iMageClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C33681EC190C50087240A /* iMageClientTests.swift */; };
@@ -56,6 +57,7 @@
 		1538C44DFD247733BA28074C /* Pods-iMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMage.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMage/Pods-iMage.release.xcconfig"; sourceTree = "<group>"; };
 		3372F5D71EC1085000591A75 /* ImageEntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageEntryTableViewCell.xib; sourceTree = "<group>"; };
 		3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryCellTests.swift; sourceTree = "<group>"; };
+		62BE29841EC1EDC900760C2B /* FBSnapshotTestCase-Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FBSnapshotTestCase-Additions.swift"; sourceTree = "<group>"; };
 		B3DA25D14FE9A079DAF90020 /* Pods_iMageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B622FCDA1EC1BAE4004FDD59 /* first_page.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = first_page.json; sourceTree = "<group>"; };
 		B67C33681EC190C50087240A /* iMageClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMageClientTests.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				B622FCD91EC1BAC5004FDD59 /* JSON */,
 				3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */,
+				62BE29841EC1EDC900760C2B /* FBSnapshotTestCase-Additions.swift */,
 				B67C33681EC190C50087240A /* iMageClientTests.swift */,
 				0F626DF71EC0E85F00D4DF15 /* Info.plist */,
 				0FA9236F1EC1119800C92481 /* iMageTests-Bridging-Header.h */,
@@ -399,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3372F5DE1EC10D8700591A75 /* ImageEntryCellTests.swift in Sources */,
+				62BE29851EC1EDC900760C2B /* FBSnapshotTestCase-Additions.swift in Sources */,
 				B67C33691EC190C50087240A /* iMageClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

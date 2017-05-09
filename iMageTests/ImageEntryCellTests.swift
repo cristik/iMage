@@ -6,20 +6,26 @@
 //  Copyright © 2017 cristik. All rights reserved.
 //
 
+
 import XCTest
 @testable import iMage
+import Dispatch
 import FBSnapshotTestCase.Swift
 
 class ImageMock: ImageEntry {
-    var caption: String { return "This image is gorgeous" }
-    var formattedDate: String { return DateFormatter.localizedString(from: Date.distantPast, dateStyle: .medium, timeStyle: .short) }
-    var imageTask: AsyncTask<UIImage> {
+    var caption: String
+    var formattedDate: String
+    var imageTask: AsyncTask<UIImage>
+    
+    init(caption: String, date: Date, url: URL) {
+        self.caption = caption
+        self.formattedDate = DateFormatter.localizedString(from: date, dateStyle: .medium, timeStyle: .short)
         let task = AsyncTask<UIImage>()
-//        let url = Bundle(for: type(of: self)).url(forResource: "imageTest", withExtension: "jpeg")
-        let data = try! Data(contentsOf: URL(string: "https://koenig-media.raywenderlich.com/uploads/2014/11/SuperDev.jpg")!)
-        task.reportSuccess(with: UIImage(data: data)!)
-//        task.reportSuccess(with: UIImage(named: "imageTest", in: Bundle(for: type(of: self)), compatibleWith: nil)!)
-        return task
+        DispatchQueue.global(qos: .default).async { [unowned task] _ in
+            let data = try! Data(contentsOf: url)//  URL(string: "https://koenig-media.raywenderlich.com/uploads/2014/11/SuperDev.jpg")!)
+            task.reportSuccess(with: UIImage(data: data)!)
+        }
+        self.imageTask = task
     }
 }
 
@@ -28,7 +34,7 @@ class ImageEntryCellTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        recordMode = true
+//        recordMode = true
     }
     
     override func tearDown() {
@@ -36,19 +42,27 @@ class ImageEntryCellTests: FBSnapshotTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let cell = UINib(nibName: "ImageEntryTableViewCell", bundle: nil).instantiate(withOwner: nil, options: nil).first! as! ImageEntryTableViewCell 
-        cell.imageEntry = ImageMock()
-        FBSnapshotVerifyView(cell, identifier: "")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testCell() {
+        // Prepare the mock
+        let entry = ImageMock(
+            caption: "Coolest picture ever",
+            date: Date.distantPast,
+            url: URL(string: "https://koenig-media.raywenderlich.com/uploads/2014/11/SuperDev.jpg")!
+        )
+        
+        // Create the view
+        let cell: ImageEntryTableViewCell = UINib.load(from: "ImageEntryTableViewCell")
+        cell.imageEntry = entry
+        let expect = XCTestExpectation(description: "Waiting for image loading")
+        
+        // Wait for the download to complete
+        entry.imageTask.onCompletion { _ in
+            DispatchQueue.main.async {
+                // Verify that view renders as it should
+                self.verifyView(cell, preferredWidth: 320)
+                expect.fulfill()
+            }
         }
+        wait(for: [expect], timeout: 5.0)
     }
-    
 }
