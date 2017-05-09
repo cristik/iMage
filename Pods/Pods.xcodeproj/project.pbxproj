@@ -25,6 +25,7 @@
 		14B31338B6E3C1BD5E6BD5CB37356AB1 /* IMGResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC16E14DF910421C2E004E91DBE75E /* IMGResponseSerializer.m */; };
 		15403671FA66C22A24E90B99CD7F8AEC /* IMGConversationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EC84C837FCB3F9E15E352297C5D75F /* IMGConversationRequest.m */; };
 		18D0BF0AFADB4A8A0B8300AA0CED14D2 /* IMGGalleryAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A0D48CC7480B4A4AF367087927AE34 /* IMGGalleryAlbum.m */; };
+		192B5DE37BDF34A0BCAD9F44D94EF521 /* Pods-iMageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE30ED3A5F3C0A0B45B24BC3F219A14F /* Pods-iMageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DF95AE3C6387F000CCFF8B7F213886 /* SwiftSupport.swift */; };
 		1D974D4F7BB49961BF96F2A9084B4812 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E16164607FC1F1A6D95B474C9389145 /* UIImageView+AFNetworking.m */; };
 		1E581308D18010B04E1B9277D1CA326C /* NSURLSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406B37CDFBA04CD25289E8C17F4EAF7 /* NSURLSessionConfiguration.swift */; };
@@ -68,7 +69,6 @@
 		571E496951B780BCF7605C233FDC21FE /* IMGObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C76F1978D5877CADF6827D25B3B8137 /* IMGObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59755C4FE162BDF3C953091E0A2BCF63 /* IMGSession.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9D6453B0EF922032B064F6535621E6 /* IMGSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59B5809E8E97F19BCDF9B18278740A6B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B529F21A77FE3B891A72BFAA35545633 /* UIActivityIndicatorView+AFNetworking.m */; };
-		5A525C2A3BB196024C637361D2200E4D /* Pods-iMageTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE30ED3A5F3C0A0B45B24BC3F219A14F /* Pods-iMageTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F4ADB57CEB7A57AC58F1E6AAD42A72A /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 238E1FFACA149DEEC7BDCB7513CA309A /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F91DEA22809A0B0ED862D303B244AA0 /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCABE5C452B6B63F8E5096D4B27CEC4 /* IMGMemeGen.m */; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACF3A8318D33E2B087992A02CC5D4CF /* UIKit.framework */; };
@@ -99,6 +99,7 @@
 		8BF9942200E664A8B76F781D1E019B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B20677C2028EFD815BEC95A2FCA6B /* Foundation.framework */; };
 		8E20E95D75983280903ECD0090EE8426 /* NSError+IMGError.h in Headers */ = {isa = PBXBuildFile; fileRef = C35153E72942789EB3E2D3357C8A355E /* NSError+IMGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9184829B9A68EA5D579686E2FEA852D7 /* IMGVote.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E89FC54CB96EAD7CD62970DE5F56D5 /* IMGVote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D56FC91FDE1D18891831B0DF6D7822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B20677C2028EFD815BEC95A2FCA6B /* Foundation.framework */; };
 		928D0E04335B82340005F85E6B6FF1E8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 331FD0D533574FCB1FB408E1BD9742BF /* UIProgressView+AFNetworking.m */; };
 		92A028FFC72019C4847D59A045B062BF /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE3E1FA2917A0BCFAE2B0C1DB019A47 /* IMGNotificationRequest.m */; };
 		93097249A33D96A0196337A901E9A0C5 /* NSError+IMGError.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4558C1997AC07FD5E538CBED3616A2 /* NSError+IMGError.m */; };
@@ -121,6 +122,7 @@
 		B830DDFACD88081FE9F0D9C087730CCA /* IMGGalleryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 261FEEE77E237E91CA9D466DE54034B8 /* IMGGalleryRequest.m */; };
 		B8E64C71559B3F4120760CA40C78A8A8 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 169ED4AB5C0A3E45742059C344D54C5A /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB104A5E27C8BA632A4F42B26091A82B /* IMGMemeGen.h in Headers */ = {isa = PBXBuildFile; fileRef = 453EE844DA213A1DDAA05F2333FD3D63 /* IMGMemeGen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC1222DB0E9649E60039173027B9D2FD /* Pods-iMageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 582462B5D15AC97E94E78A5444485CF1 /* Pods-iMageTests-dummy.m */; };
 		BC49769181FC0D602BD0C7ED5B27F138 /* IMGMeme.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D150A4DD4DEBF14B2B217B8D6BEEBC /* IMGMeme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E8550A8091A0B76C72CA55AF427469 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD15AE5E8DBF6E22444CEF86F0A1DDA7 /* IMGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF61D9621E5CA5D8B3F7E1D03F30EC8 /* IMGImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -137,7 +139,6 @@
 		C8EA7B27FCA8377BE686BE03C73E3889 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A34770A15067E67EAECF07A2CC91A4 /* UIRefreshControl+AFNetworking.m */; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF80D31CD13CA4CA247E0F3E7D77704 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CBD95DE2475DD3C44711E77F0BC7B08A /* URITemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA84305744910AAB933FBCED27B2772 /* URITemplate.swift */; };
-		CDB8FA964FADC9C41C2FC347E58A7E13 /* Pods-iMageTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 582462B5D15AC97E94E78A5444485CF1 /* Pods-iMageTests-dummy.m */; };
 		CEA9BE65E37E673A7EB0D6F10B754BED /* IMGConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAA9CDAE82ECCE00037B02034461975 /* IMGConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF0E8D70D0E6ECB756F7029AE0842E17 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 188BB800418EAF6A5AA7FA93F1E16A84 /* AFNetworkActivityIndicatorManager.m */; };
 		D32332CA40D4F631E8DBA950B25A18FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832C9E1C3180B7835857079DD77920C8 /* XCTest.framework */; };
@@ -153,7 +154,6 @@
 		E102FB6604F2D85FEA78BAF91D4B97C5 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B16CDDEB74BB4DE19A3CB43D82504DD /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E141F8C5C74F5EE4F7E703D5C0E812BC /* Mockingjay.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B38CDF581CF866576DF0F1D90F3158F /* Mockingjay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5222D5213B3E04543E58AEA1EB0B984 /* ImgurSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A5CA9ABE024FCD055246414F7056EC /* ImgurSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5C8973F24AF4E38854C262DC5C2F233 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B20677C2028EFD815BEC95A2FCA6B /* Foundation.framework */; };
 		EA347FB94AF676353CF6A0E33AA420B5 /* NSDictionary+IMG.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D26127D1D711C88579372D0434B89 /* NSDictionary+IMG.m */; };
 		ED55B85234B23A91E2E4710E271C7246 /* IMGImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C802FC74DCEB092BBEDF4498D8A3C /* IMGImageRequest.m */; };
 		F405E30C12DEEBD7216CC5514A383226 /* MockingjayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E446DC09D8C2399DA54138503BF351 /* MockingjayProtocol.swift */; };
@@ -161,19 +161,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		03ACB14332FEF0576EF0DBA8AAE218D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ED8BE8BD6A53853974A60E1AC8B1019;
+			remoteInfo = AFNetworking;
+		};
+		180FC4C666E74439B7C87B99BED5B52B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34CD2E3428AB802BACA62286FF5074B1;
+			remoteInfo = FBSnapshotTestCase;
+		};
 		37BFFDAAA0C4330B0981D7AB5E102997 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5BAEE407D509A3F67350A21DD9179E25;
 			remoteInfo = URITemplate;
-		};
-		64717BDC8A949FA53A0169B430213882 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34CD2E3428AB802BACA62286FF5074B1;
-			remoteInfo = FBSnapshotTestCase;
 		};
 		73D5391368EC09FA742BA34BCE539AD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -182,13 +189,6 @@
 			remoteGlobalIDString = 1ED8BE8BD6A53853974A60E1AC8B1019;
 			remoteInfo = AFNetworking;
 		};
-		8B3D28B62E27C7D1923A40E1FAF438AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BAACC736A5215103E10E2DC0A74FDCD;
-			remoteInfo = Mockingjay;
-		};
 		9EBC240E8851BD37CBEE0ED043E46D65 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -196,12 +196,12 @@
 			remoteGlobalIDString = 769B92F5D2370BE9BDE2D4E6422A0149;
 			remoteInfo = ImgurSession;
 		};
-		D1ADA1DBCC99985F343788AC71605D19 /* PBXContainerItemProxy */ = {
+		C81A990885DC0C6F08279BFAD336E18D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5BAEE407D509A3F67350A21DD9179E25;
-			remoteInfo = URITemplate;
+			remoteGlobalIDString = 5BAACC736A5215103E10E2DC0A74FDCD;
+			remoteInfo = Mockingjay;
 		};
 		E3EADA772A041817E4263C58B4B142D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -209,6 +209,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1ED8BE8BD6A53853974A60E1AC8B1019;
 			remoteInfo = AFNetworking;
+		};
+		ED3760B4EFAEDB40650C32692651EA13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 769B92F5D2370BE9BDE2D4E6422A0149;
+			remoteInfo = ImgurSession;
+		};
+		F4B1D96A33956DE279F256D7066D9120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BAEE407D509A3F67350A21DD9179E25;
+			remoteInfo = URITemplate;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -423,6 +437,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C8698F8E1BCFD812B68DBF5B9602F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D56FC91FDE1D18891831B0DF6D7822 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96C3909747E8F888CBAF210A6B9F7073 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,14 +452,6 @@
 				340E892E4635BFF3C198D356C4AC854C /* Foundation.framework in Frameworks */,
 				A1136007D0AE6FA6A4880E97642D1E49 /* URITemplate.framework in Frameworks */,
 				51A81325D6F4A1CB9F7550705CB5E384 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F2863301712874E7E067BA48446AE0C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5C8973F24AF4E38854C262DC5C2F233 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +912,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		54B2D6CB088B58D1B71F054583E62354 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192B5DE37BDF34A0BCAD9F44D94EF521 /* Pods-iMageTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657DDFC2F53785D8C4CF08ED7539C801 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -979,14 +1001,6 @@
 				9184829B9A68EA5D579686E2FEA852D7 /* IMGVote.h in Headers */,
 				3A27954EB99F808A0E2F0AE1DD5FA3E6 /* NSDictionary+IMG.h in Headers */,
 				8E20E95D75983280903ECD0090EE8426 /* NSError+IMGError.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99629E258EC783CDD33382DEA1F61545 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A525C2A3BB196024C637361D2200E4D /* Pods-iMageTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1103,26 +1117,6 @@
 			productReference = 276AF332282F19C8585D51F78BD2BEDA /* ImgurSession.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8D0A0186C87F81D42C752D16D43D9FA6 /* Pods-iMageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B887BC7C775FD8FF582D4E6A35AAFB31 /* Build configuration list for PBXNativeTarget "Pods-iMageTests" */;
-			buildPhases = (
-				C7730D0F5286F0E73DC308DF8B181F15 /* Sources */,
-				9F2863301712874E7E067BA48446AE0C /* Frameworks */,
-				99629E258EC783CDD33382DEA1F61545 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				37A08512D2F400DBF738F6B658C070F8 /* PBXTargetDependency */,
-				A01339447A2EC4E213E01D134BFD84D4 /* PBXTargetDependency */,
-				3DCEBB1DF6EBF63B8AAB984EAFA1A09F /* PBXTargetDependency */,
-			);
-			name = "Pods-iMageTests";
-			productName = "Pods-iMageTests";
-			productReference = 121A4BD8F3FB256E376E2C9C2DD4B700 /* Pods_iMageTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		DF0F0934A8B54D89A404587F0ABE677D /* Pods-iMage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9492383BC7535983390A4AD5D2973E4 /* Build configuration list for PBXNativeTarget "Pods-iMage" */;
@@ -1140,6 +1134,28 @@
 			name = "Pods-iMage";
 			productName = "Pods-iMage";
 			productReference = 877C5A707ACE91691B42843634ABAE51 /* Pods_iMage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F28D2733A93E30AD7C38B5F983058817 /* Pods-iMageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91D5773C5B218922EE1AAA372C77A4E0 /* Build configuration list for PBXNativeTarget "Pods-iMageTests" */;
+			buildPhases = (
+				E08DC357F45989DE4DECBE9AD0A48F5D /* Sources */,
+				6C8698F8E1BCFD812B68DBF5B9602F1E /* Frameworks */,
+				54B2D6CB088B58D1B71F054583E62354 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5ECD60597231037A75735AE57C27BD /* PBXTargetDependency */,
+				E77EB959D3708E643D8A6F1558CE0772 /* PBXTargetDependency */,
+				54EB3CF7B066464506A2A83CB1947510 /* PBXTargetDependency */,
+				6204E284BE712CBC04899979A62D4465 /* PBXTargetDependency */,
+				33FFD90F9CAF01206EF30DF2338F910B /* PBXTargetDependency */,
+			);
+			name = "Pods-iMageTests";
+			productName = "Pods-iMageTests";
+			productReference = 121A4BD8F3FB256E376E2C9C2DD4B700 /* Pods_iMageTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1168,7 +1184,7 @@
 				769B92F5D2370BE9BDE2D4E6422A0149 /* ImgurSession */,
 				5BAACC736A5215103E10E2DC0A74FDCD /* Mockingjay */,
 				DF0F0934A8B54D89A404587F0ABE677D /* Pods-iMage */,
-				8D0A0186C87F81D42C752D16D43D9FA6 /* Pods-iMageTests */,
+				F28D2733A93E30AD7C38B5F983058817 /* Pods-iMageTests */,
 				5BAEE407D509A3F67350A21DD9179E25 /* URITemplate */,
 			);
 		};
@@ -1268,11 +1284,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7730D0F5286F0E73DC308DF8B181F15 /* Sources */ = {
+		E08DC357F45989DE4DECBE9AD0A48F5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB8FA964FADC9C41C2FC347E58A7E13 /* Pods-iMageTests-dummy.m in Sources */,
+				BC1222DB0E9649E60039173027B9D2FD /* Pods-iMageTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1307,17 +1323,23 @@
 			target = 1ED8BE8BD6A53853974A60E1AC8B1019 /* AFNetworking */;
 			targetProxy = 73D5391368EC09FA742BA34BCE539AD4 /* PBXContainerItemProxy */;
 		};
-		37A08512D2F400DBF738F6B658C070F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */;
-			targetProxy = 64717BDC8A949FA53A0169B430213882 /* PBXContainerItemProxy */;
-		};
-		3DCEBB1DF6EBF63B8AAB984EAFA1A09F /* PBXTargetDependency */ = {
+		33FFD90F9CAF01206EF30DF2338F910B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = URITemplate;
 			target = 5BAEE407D509A3F67350A21DD9179E25 /* URITemplate */;
-			targetProxy = D1ADA1DBCC99985F343788AC71605D19 /* PBXContainerItemProxy */;
+			targetProxy = F4B1D96A33956DE279F256D7066D9120 /* PBXContainerItemProxy */;
+		};
+		54EB3CF7B066464506A2A83CB1947510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImgurSession;
+			target = 769B92F5D2370BE9BDE2D4E6422A0149 /* ImgurSession */;
+			targetProxy = ED3760B4EFAEDB40650C32692651EA13 /* PBXContainerItemProxy */;
+		};
+		6204E284BE712CBC04899979A62D4465 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Mockingjay;
+			target = 5BAACC736A5215103E10E2DC0A74FDCD /* Mockingjay */;
+			targetProxy = C81A990885DC0C6F08279BFAD336E18D /* PBXContainerItemProxy */;
 		};
 		839503359D65F5788C9EBE47FB7F0589 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1331,51 +1353,21 @@
 			target = 769B92F5D2370BE9BDE2D4E6422A0149 /* ImgurSession */;
 			targetProxy = 9EBC240E8851BD37CBEE0ED043E46D65 /* PBXContainerItemProxy */;
 		};
-		A01339447A2EC4E213E01D134BFD84D4 /* PBXTargetDependency */ = {
+		BF5ECD60597231037A75735AE57C27BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Mockingjay;
-			target = 5BAACC736A5215103E10E2DC0A74FDCD /* Mockingjay */;
-			targetProxy = 8B3D28B62E27C7D1923A40E1FAF438AF /* PBXContainerItemProxy */;
+			name = AFNetworking;
+			target = 1ED8BE8BD6A53853974A60E1AC8B1019 /* AFNetworking */;
+			targetProxy = 03ACB14332FEF0576EF0DBA8AAE218D7 /* PBXContainerItemProxy */;
+		};
+		E77EB959D3708E643D8A6F1558CE0772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */;
+			targetProxy = 180FC4C666E74439B7C87B99BED5B52B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0836C881279E2CA0816DC840E0F89A2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3B92E6FA1FFD23769331F2EB2E7B202 /* Pods-iMageTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iMageTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iMageTests/Pods-iMageTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iMageTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1612,6 +1604,42 @@
 			};
 			name = Debug;
 		};
+		818260AEE32A82864BAAE868E2B504B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B92E6FA1FFD23769331F2EB2E7B202 /* Pods-iMageTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMageTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMageTests/Pods-iMageTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMageTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A29620D6BD10CA675FB986D113DAD152 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A91134C2CA13B08B53CED5FF8F755791 /* Mockingjay.xcconfig */;
@@ -1676,6 +1704,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		AE72ABF81BFCCBD1CBFFC93B3E5C7CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433486B6442C253DFDBF073253E592E7 /* Pods-iMageTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMageTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMageTests/Pods-iMageTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMageTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B57EE59C0A00DB99D4A5A4068B8C0C7B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1786,41 +1849,6 @@
 			};
 			name = Debug;
 		};
-		DA13E977D6714872E9531D3D1F8B0790 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 433486B6442C253DFDBF073253E592E7 /* Pods-iMageTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iMageTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iMageTests/Pods-iMageTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iMageTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		DDA6A07E003715EFDEB88227447582F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19FBA95F985E85EF80BA0F0A2F9855CA /* Pods-iMage.release.xcconfig */;
@@ -1918,20 +1946,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		91D5773C5B218922EE1AAA372C77A4E0 /* Build configuration list for PBXNativeTarget "Pods-iMageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818260AEE32A82864BAAE868E2B504B2 /* Debug */,
+				AE72ABF81BFCCBD1CBFFC93B3E5C7CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7B35FB509060502691365D2C894CAFE /* Build configuration list for PBXNativeTarget "ImgurSession" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0AE5E8713A3A3AC903FB1FA55A40D4A /* Debug */,
 				587BDED407336A9A4CE7DAE758B9368D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B887BC7C775FD8FF582D4E6A35AAFB31 /* Build configuration list for PBXNativeTarget "Pods-iMageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0836C881279E2CA0816DC840E0F89A2A /* Debug */,
-				DA13E977D6714872E9531D3D1F8B0790 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

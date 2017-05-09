@@ -11,7 +11,6 @@
 		0F626DE31EC0E85F00D4DF15 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DE21EC0E85F00D4DF15 /* FeedViewController.swift */; };
 		0F626DE81EC0E85F00D4DF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F626DE71EC0E85F00D4DF15 /* Assets.xcassets */; };
 		0F626DEB1EC0E85F00D4DF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F626DE91EC0E85F00D4DF15 /* LaunchScreen.storyboard */; };
-		0F626DF61EC0E85F00D4DF15 /* iMageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */; };
 		0F626E011EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */; };
 		0F626E031EC0EDDE00D4DF15 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E021EC0EDDE00D4DF15 /* Utils.swift */; };
 		0F626E051EC0F74F00D4DF15 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F626E041EC0F74F00D4DF15 /* AsyncTask.swift */; };
@@ -45,7 +44,6 @@
 		0F626DEA1EC0E85F00D4DF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F626DEC1EC0E85F00D4DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F626DF11EC0E85F00D4DF15 /* iMageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMageTests.swift; sourceTree = "<group>"; };
 		0F626DF71EC0E85F00D4DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F626E001EC0EAF100D4DF15 /* ImageEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEntryTableViewCell.swift; sourceTree = "<group>"; };
 		0F626E021EC0EDDE00D4DF15 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				B622FCD91EC1BAC5004FDD59 /* JSON */,
-				0F626DF51EC0E85F00D4DF15 /* iMageTests.swift */,
 				3372F5DD1EC10D8700591A75 /* ImageEntryCellTests.swift */,
 				B67C33681EC190C50087240A /* iMageClientTests.swift */,
 				0F626DF71EC0E85F00D4DF15 /* Info.plist */,
@@ -403,7 +400,6 @@
 			files = (
 				3372F5DE1EC10D8700591A75 /* ImageEntryCellTests.swift in Sources */,
 				B67C33691EC190C50087240A /* iMageClientTests.swift in Sources */,
-				0F626DF61EC0E85F00D4DF15 /* iMageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +555,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C9A4EEEA4031ED8DEC16E887 /* Pods-iMageTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F256K9XGKC;
@@ -578,7 +573,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F047F8044CF101311DBCD33B /* Pods-iMageTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F256K9XGKC;
