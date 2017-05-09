@@ -24,22 +24,16 @@ class ImageEntryTableViewCell: UITableViewCell {
             configure()
         }
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        configure()
-    }
-    
+    private weak var currentImageTask: AsyncTask<UIImage>?
+
     func configure() {
-        
-        guard let imageEntry = imageEntry else {
-            return
-        }
-        
         caption.text = imageEntry.caption
         date.text = imageEntry.formattedDate
-        imageEntry.imageTask.onCompletion { [weak imageEntry, weak self] result in
-            guard let imageEntry = imageEntry, let `self` = self, self.imageEntry === imageEntry else {
+
+        let imageTask = imageEntry.imageTask
+        self.currentImageTask = imageTask
+        imageTask.onCompletion { [weak self] result in
+            guard let `self` = self, self.currentImageTask === imageTask else {
                 return
             }
             switch result {
