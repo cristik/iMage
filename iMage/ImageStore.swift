@@ -13,7 +13,6 @@ struct ImageStore {
     public private(set) var images: [Image] = []
     public private(set) var pageCount: Int = 0
 
-
     /// Returns a store with the initial state
     ///
     /// - Parameter images: images
