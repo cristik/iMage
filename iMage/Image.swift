@@ -38,3 +38,6 @@ class Image: ImageEntry {
     }
 }
 
+func ==(lhs: Image, rhs: Image) -> Bool {
+    return lhs.imgImage.imageID == rhs.imgImage.imageID
+}
